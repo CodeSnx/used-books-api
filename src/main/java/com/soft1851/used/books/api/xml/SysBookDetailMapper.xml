@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.soft1851.used.books.api.mapper.SysBookDetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.soft1851.used.books.api.domain.entity.SysBookDetail">
+        <id column="id" property="id" />
+        <result column="book_list_id" property="bookListId" />
+        <result column="subtype_id" property="subtypeId" />
+        <result column="book_name" property="bookName" />
+        <result column="book_cover" property="bookCover" />
+        <result column="author" property="author" />
+        <result column="introduction" property="introduction" />
+        <result column="price" property="price" />
+        <result column="discount" property="discount" />
+        <result column="quantity" property="quantity" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, book_list_id, subtype_id, book_name, book_cover, author, introduction, price, discount, quantity
+    </sql>
+
+</mapper>

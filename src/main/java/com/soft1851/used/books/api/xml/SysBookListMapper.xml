@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.soft1851.used.books.api.mapper.SysBookListMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.soft1851.used.books.api.domain.entity.SysBookList">
+        <id column="id" property="id" />
+        <result column="book_list_name" property="bookListName" />
+        <result column="cover" property="cover" />
+        <result column="description" property="description" />
+        <result column="books_quantity" property="booksQuantity" />
+        <result column="like_quantity" property="likeQuantity" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, book_list_name, cover, description, books_quantity, like_quantity
+    </sql>
+
+</mapper>
